@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Hero = ({ titleData, createCampaign }) => {
-  const [campign, setCampaign] = useState({
+  const [campaign, setCampaign] = useState({
     title: "",
     description: "",
     amount: "",
