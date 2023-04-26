@@ -1,9 +1,8 @@
 import React, { useEffect, useContext, useState } from "react";
 
 import { CrowdFundingContext } from "@/Context/CrowdFunding";
-import { Hero } from "@/Components/Hero";
-import { Card } from "@/Components/Card";
-import { PopUp } from "@/Components/PopUp";
+import { Hero, Card, PopUp } from "../Components/index";
+
 
 const index = () => {
   const {

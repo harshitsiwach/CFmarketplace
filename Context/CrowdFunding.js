@@ -7,8 +7,7 @@ import { CrowdFundingABI, CrowdFundingAddress } from "./constants";
 
 //smart contract interaction
 
-const fetchContract = (signOrProvider) =>
-  new ethers.Contract(CrowdFundingABI, CrowdFundingAddress, signOrProvider);
+const fetchContract = (signOrProvider) => new ethers.Contract(CrowdFundingABI, CrowdFundingAddress, signOrProvider);
 export const CrowdFundingContext = React.createContext();
 
 export const CrowdFundingProvider = ({ children }) => {

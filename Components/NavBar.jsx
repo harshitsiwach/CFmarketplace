@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 
 import { CrowdFundingContext } from '@/Context/CrowdFunding';
-import { Logo, Menu } from '../Components/index';
+import { Logo, Menu } from '@/Components/index';
 
 const NavBar = () => {
   const { currentAccount, connectWallet } = useContext(CrowdFundingContext);
