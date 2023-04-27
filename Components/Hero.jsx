@@ -1,3 +1,5 @@
+// Section to initiate a new campaign
+
 import React, { useState } from "react";
 
 const Hero = ({ titleData, createCampaign }) => {
@@ -33,13 +35,19 @@ const Hero = ({ titleData, createCampaign }) => {
           md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="flex flex-col items-center justify-between xl:flex-row">
               <div className="w-full max-w-xl m-12 xl:mb-0 xl-pr-16 xl:w-7/12">
-                <h2 className="max-w--lg mb-l font-sans text-3xl font-bold tracking-tight text-white sm:text-5xl sm:leading-none">
-                  Crypto king <br className="hidden md:block" />
-                  Crowd Funding CK
+                
+                
+                <h2 className="max-w--lg mb-l font-serif text-3xl font-bold hover:text-xl duration-500 text-merablue tracking-tight text-white sm:text-5xl sm:leading-none">
+                  Shard <br className="hidden md:block" />
+                  Scape  
                 </h2>
-                <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-                  lorem ipsum sex sum dimsum kiss some MFS
+
+                
+                <p className="max-w-xl mb-4 text-base text-gray-200 hover:text-xl duration-500 md:text-lg">
+                Raising Funds made Simple!
                 </p>
+                
+                
                 <a
                   href="/"
                   aria-label=""
@@ -51,13 +59,21 @@ const Hero = ({ titleData, createCampaign }) => {
                     viewBox="0 0 12 12">
                   </svg>
                 </a>
+
+                
               </div>
               <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
-                <div className="bg-white rounded shadow-2xl p-7 sm:p-10">
+                <div className="bg-merablue border-1 border-slate-500 hover:border-slate-400 rounded  sm:p-10">
+                  
+                  
                   <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                     Campaign
                   </h3>
+                  
+
                   <form>
+                    
+                    
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="FirstName"
@@ -74,12 +90,14 @@ const Hero = ({ titleData, createCampaign }) => {
                         placeholder="title"
                         required type="text"
                         className="flex-grow w-full h-12 px-4 mb-2 transition
-                      duration-200 bg-white border border-gray-300 rounded shadow-sm-apperance-none 
+                      duration-200 bg-white border-2 border-blue-500 hover:border-slate-400 rounded border-gray-300 rounded shadow-sm-apperance-none 
                       focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
                         id="firstName"
                         name="firstName"
                       />
                     </div>
+
+                      
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="description"
@@ -96,12 +114,14 @@ const Hero = ({ titleData, createCampaign }) => {
                         placeholder="description"
                         required type="text"
                         className="flex-grow w-full h-12 px-4 mb-2 transition
-                    duration-200 bg-white border border-gray-300 rounded shadow-sm-apperance-none 
+                    duration-200 bg-white border-2 border-blue-500 rounded shadow-sm-apperance-none 
                     focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
                         id="lastName"
                         name="lastName"
                       />
                     </div>
+
+                    
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="email"
@@ -118,12 +138,14 @@ const Hero = ({ titleData, createCampaign }) => {
                         placeholder="amoount"
                         required type="text"
                         className="flex-grow w-full h-12 px-4 mb-2 transition
-                    duration-200 bg-white border border-gray-300 rounded shadow-sm-apperance-none 
+                    duration-200 bg-white border-2 border-blue-500 rounded shadow-sm-apperance-none 
                     focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
                         id="email"
                         name="email"
                       />
                     </div>
+                    
+                    
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="email"
@@ -140,12 +162,14 @@ const Hero = ({ titleData, createCampaign }) => {
                         placeholder="Date"
                         required type="date"
                         className="flex-grow w-full h-12 px-4 mb-2 transition
-                    duration-200 bg-white border border-gray-300 rounded shadow-sm-apperance-none 
+                    duration-200 bg-white border-2 border-blue-500 rounded shadow-sm-apperance-none 
                     focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
                         id="email"
                         name="email"
                       />
                     </div>
+                    
+                    
                     <div className="mt-4 mb-2 sm:mb-4 ">
                       <button onClick={(e) => createNewCampaign(e)}
                         type="submit"
@@ -156,10 +180,16 @@ const Hero = ({ titleData, createCampaign }) => {
                         Create campaign
                       </button>
                     </div>
+
+
                     <p className="text-xs text-gray-600 sm:text-sm">
                       create your campiagn to raise some juicy funds
                     </p>
+
+
                   </form>
+
+
                 </div>
               </div>
             </div>

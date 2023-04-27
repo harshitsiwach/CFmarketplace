@@ -11,8 +11,10 @@ const NavBar = () => {
       <div className="backgroundMain">
         <div className="px-4 py-5 mx-auto sm:max-w-wl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="relative flex items-center justify-between">
-            <div className="flex items-center">
-              <a
+          <div className="flex items-center">
+              
+            
+            <a
                 href='/'
                 aria-label='ShardScape'
                 title='ShardScape'
@@ -21,7 +23,9 @@ const NavBar = () => {
                 <span className="ml-2 text-xl font-extrabold tracking-wide text-grey-100 uppercase">
                   SharScape
                 </span>
-              </a>
+            </a>
+            
+
               <ul className="flex items-center hidden space-x-8 lg:flex">
                 {menuList.map((el, i) => (
                   <li key={i + 1}>
@@ -37,7 +41,11 @@ const NavBar = () => {
             {!currentAccount && (
               <ul className="flex items-center hidden space-x-8 lg:flex">
                 <li>
-                  <button onClick={() => connectWallet()} className="inline-flex items-center justify-center h-12 px-6 font-medium trcking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none background"
+                <button onClick={() => connectWallet()} className="inline-flex items-center justify-center
+                   h-12 px-6 font-s  trcking-wide text-white transition
+                  shadow-md bg-red-400
+                   hover:font-mono hover:border rounded border-yellow-400 duration-700 focus:shadow-outline focus:outline-none background
+                   "
                     aria-label='sign up'
                     title='sign up'> Connect Wallet
                   </button>

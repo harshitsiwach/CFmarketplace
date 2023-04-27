@@ -16,10 +16,10 @@ const Footer = () => {
             <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
             </h6>
             <p>
-              sexme
-              textme
-              love me
-              don't
+              Article
+              ShardScape WebGL
+              Socials
+              HOME
             </p>
           </div>
           <div className="">
