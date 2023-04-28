@@ -63,7 +63,7 @@ const Hero = ({ titleData, createCampaign }) => {
                 
               </div>
               <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
-                <div className="bg-merablue border-1 border-slate-500 hover:border-slate-400 rounded  sm:p-10">
+                <div className="bg-merablue border-1 border-slate-500 hover:bg-red-600 duration-500 rounded  sm:p-10">
                   
                   
                   <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
@@ -74,7 +74,7 @@ const Hero = ({ titleData, createCampaign }) => {
                   <form>
                     
                     
-                    <div className="mb-1 sm:mb-2">
+                    <div className="mb-1 sm:mb-2 ">
                       <label
                         htmlFor="FirstName"
                         className="inline-block mb-1 font-medium">
@@ -90,7 +90,8 @@ const Hero = ({ titleData, createCampaign }) => {
                         placeholder="title"
                         required type="text"
                         className="flex-grow w-full h-12 px-4 mb-2 transition
-                      duration-200 bg-white border-2 border-blue-500 hover:border-slate-400 rounded border-gray-300 rounded shadow-sm-apperance-none 
+                      duration-200 bg-white border-2 
+                      hover:border-slate-400 rounded border-gray-300 shadow-sm-apperance-none 
                       focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
                         id="firstName"
                         name="firstName"
