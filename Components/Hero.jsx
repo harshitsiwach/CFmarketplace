@@ -37,9 +37,8 @@ const Hero = ({ titleData, createCampaign }) => {
               <div className="w-full max-w-xl m-12 xl:mb-0 xl-pr-16 xl:w-7/12">
                 
                 
-                <h2 className="max-w--lg mb-l font-serif text-3xl font-bold hover:text-xl duration-500 text-merablue tracking-tight text-white sm:text-5xl sm:leading-none">
-                  Shard <br className="hidden md:block" />
-                  Scape  
+                <h2 className="max-w--lg mb-l font-serif text-3xl font-bold hover:scale-110 duration-500 text-merablue tracking-tight text-white sm:text-5xl sm:leading-none">
+                  ShardScape <br className="hidden md:block" />
                 </h2>
 
                 
@@ -48,7 +47,7 @@ const Hero = ({ titleData, createCampaign }) => {
                 </p>
                 
                 
-                <a
+                {/*<a
                   href="/"
                   aria-label=""
                   className="inline-flex items-center font-semibold tracking-wider tansition-colors duration-200 text-teal-accent-700 text-gray-200">
@@ -58,12 +57,12 @@ const Hero = ({ titleData, createCampaign }) => {
                     fill="currentColor"
                     viewBox="0 0 12 12">
                   </svg>
-                </a>
+                </a>*/}
 
                 
               </div>
               <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
-                <div className="bg-merablue border-1 border-slate-500 hover:bg-red-600 duration-500 rounded  sm:p-10">
+                <div className="bg-meraslate border-1 rounded sm:p-10">
                   
                   
                   <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
@@ -87,11 +86,11 @@ const Hero = ({ titleData, createCampaign }) => {
                             title: e.target.value,
                           })
                         }
-                        placeholder="title"
+                        placeholder="Title for your Campaign"
                         required type="text"
                         className="flex-grow w-full h-12 px-4 mb-2 transition
-                      duration-200 bg-white border-2 
-                      hover:border-slate-400 rounded border-gray-300 shadow-sm-apperance-none 
+                      duration-200 bg-merapurple hover:border-2
+                       hover:border-meradarkpink-400 rounded shadow-sm-apperance-none 
                       focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
                         id="firstName"
                         name="firstName"
@@ -112,11 +111,12 @@ const Hero = ({ titleData, createCampaign }) => {
                             description: e.target.value,
                           })
                         }
-                        placeholder="description"
+                        placeholder="Description of Campaign"
                         required type="text"
                         className="flex-grow w-full h-12 px-4 mb-2 transition
-                    duration-200 bg-white border-2 border-blue-500 rounded shadow-sm-apperance-none 
-                    focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
+                        duration-200 bg-merapurple hover:border-2
+                         hover:border-meradarkpink-400 rounded shadow-sm-apperance-none 
+                        focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
                         id="lastName"
                         name="lastName"
                       />
@@ -136,11 +136,12 @@ const Hero = ({ titleData, createCampaign }) => {
                             amount: e.target.value,
                           })
                         }
-                        placeholder="amoount"
+                        placeholder="Amount to be Raised"
                         required type="text"
                         className="flex-grow w-full h-12 px-4 mb-2 transition
-                    duration-200 bg-white border-2 border-blue-500 rounded shadow-sm-apperance-none 
-                    focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
+                        duration-200 bg-merapurple hover:border-2
+                         hover:border-meradarkpink-400 rounded shadow-sm-apperance-none 
+                        focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
                         id="email"
                         name="email"
                       />
@@ -163,8 +164,9 @@ const Hero = ({ titleData, createCampaign }) => {
                         placeholder="Date"
                         required type="date"
                         className="flex-grow w-full h-12 px-4 mb-2 transition
-                    duration-200 bg-white border-2 border-blue-500 rounded shadow-sm-apperance-none 
-                    focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
+                        duration-200 bg-merapurple hover:border-2
+                         hover:border-meradarkpink-400 rounded shadow-sm-apperance-none 
+                        focus:border-deep-purple-acccent-400 focus:outline-none focus:shadow-outline"
                         id="email"
                         name="email"
                       />
@@ -183,7 +185,7 @@ const Hero = ({ titleData, createCampaign }) => {
                     </div>
 
 
-                    <p className="text-xs text-gray-600 sm:text-sm">
+                    <p className=" flex justify-center text-xs text-gray-600 sm:text-sm">
                       create your campiagn to raise some juicy funds
                     </p>
 
