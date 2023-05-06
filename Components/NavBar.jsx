@@ -2,23 +2,29 @@ import React, { useState, useContext } from 'react';
 
 import { CrowdFundingContext } from '@/Context/CrowdFunding';
 import { Logo, Menu } from '@/Components/index';
-
+import image1  from '../media/cover.png';
 const NavBar = () => {
   const { currentAccount, connectWallet } = useContext(CrowdFundingContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuList = ["Whitepaper", "projects", "doantion", "members"];
   return (
-      <div className="backgroundMain">
+    
+    <div className="backgroundMain">
+      
         <div className="px-4 py-5 mx-auto sm:max-w-wl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="relative flex items-center justify-between">
+          <img src={image1}/>
+          
           <div className="flex items-center">
               
-            
+          
+     
+      
             <a
                 href='/'
                 aria-label='ShardScape'
                 title='ShardScape'
-                className="inline-flex items-center mr-8">
+                className="hover:text-white duration-200 inline-flex items-center mr-8">
                 <Logo color="text-white" />
                 <span className="ml-2 text-xl font-extrabold tracking-wide text-grey-100 uppercase">
                   SharScape
@@ -30,10 +36,17 @@ const NavBar = () => {
                 {menuList.map((el, i) => (
                   <li key={i + 1}>
                     <a
+                      
                       href="/"
                       aria-label='our product'
                       title='our product'
-                      className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"> {el} </a>
+                      className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"> {el} <div>
+                      
+                      
+                      
+                      
+                      
+                      </div></a>
                   </li>
                 ))}
               </ul>
